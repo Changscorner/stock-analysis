@@ -4,13 +4,13 @@
 
 	Examine the reason for refactoring VBA code and the efficiencies or inefficiencies it can add.
   
-##Purpose
+## Purpose
 
 	1.)Taking the original VBA and edit the code to loop through all the data once rather than once per ticker symbol 
 	
 	2.)Determine if this method will decrease or increase the code runtime
 
-##Results
+## Results
 
 	The original code was written to ask the user to input a year for which they would like to have analyzed. 
 		```
