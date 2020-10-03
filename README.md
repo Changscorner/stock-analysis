@@ -99,7 +99,7 @@ The original code has a runtime for the years 2017 and 2018 of:
  <img src="https://github.com/Changscorner/stock-analysis/blob/master/Resources/VBA_Challenge_2017.png">
  <img src="https://github.com/Changscorner/stock-analysis/blob/master/Resources/VBA_Challenge_2018.png">
 
-There is a difference of around 0.086 seconds and 0.0625 for 2017 and 2018 respectively.
+There is a difference of around 0.086 and 0.0625 seconds for 2017 and 2018 respectively.
 This isn't even accounting for the fact that in the old code the formatting has to be run on its own afterwards instead of being packaged in.
 
 ### Stock Performance 2017 VS 2018
