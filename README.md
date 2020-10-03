@@ -14,7 +14,7 @@ Examine the reason for refactoring VBA code and the efficiencies or inefficienci
 
 The original code was written to ask the user to input a year for which they would like to have analyzed using this code: 
 ```		
-	yearValue = InputBox("What year would you like to run the analysis on?")		
+    yearValue = InputBox("What year would you like to run the analysis on?")		
 ```
 Taking that input it would then run through the selected years worksheet once for each ticker and output the ticker, volume and returns data.
 This is rather inefficient as the code has to runthorugh the worksheet 12 times so instead of doing it this way a better method would be to create 3 arrays that would store each output type for each ticker symbol.
