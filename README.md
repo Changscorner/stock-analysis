@@ -12,7 +12,7 @@ The Advantages and Disadvantages of Refactoring Code.
 
 ## Dataset
 
-[Stock Anaysis](VBA_Challenge.xlsm)
+[Stock Analysis](VBA_Challenge.xlsm)
 
 ## Results
 
@@ -52,7 +52,7 @@ The biggest difference is the code was editing the For loop to reference the arr
                endingPrice = Cells(j, 6).Value
 
            End If
-        Next j
+    Next j
 ```
 While the new code looks like this:
 ```
@@ -66,15 +66,12 @@ While the new code looks like this:
             End If
 
         '3b) Check if the current row is the first row with the selected tickerIndex.
-        'If  Then
             If Cells(i - 1, 1).Value <> ticker And Cells(i, 1).Value = ticker Then
 
                 tickerStartingPrices(tickerIndex) = Cells(i, 6).Value + tickerStartingPrices(tickerIndex)
-           'End If
             End If
 
         '3c) check if the current row is the last row with the selected ticker
-        'If  Then
             If Cells(i + 1, 1).Value <> ticker And Cells(i, 1).Value = ticker Then
 
                 'store the tickerEndingPrice into the array
@@ -83,11 +80,10 @@ While the new code looks like this:
             '3d Increase the tickerIndex.
 
                 tickerIndex = tickerIndex + 1
-            'End If
 
             End If
 
-        Next i
+    Next i
 ```
 
 The new code uses the 3 output arrays that we created earlier, which allows the code to run through the worksheet only once. Under each If function in the new code the tickerVolumes, tickerStartingPrices, tickerEndingPrices each referenced their own output arrays to store the data.
