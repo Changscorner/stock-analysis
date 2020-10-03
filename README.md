@@ -2,13 +2,13 @@
 
 ## Overview of Project
 
-Comparing the returns of 12 stocks for the years 2017 and 2018 using VBA. Then refactoring the code to see if it becomes more efficient.
+The Advantages and Disadvantages of Refactoring Code.
 
 ## Purpose
 
 1.)Taking the original VBA and editing the code to loop through all the data one time rather than once per ticker symbol
 
-2.)Determine if this method will decrease or increase the code runtime
+2.)Determine if refactoring increases or decreases code efficiencies.
 
 ## Results
 
