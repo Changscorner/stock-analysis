@@ -86,7 +86,7 @@ While the new code looks like this:
         Next i
 ```
 
-The new code uses the 3 output arrays that we created earlier, which allows the code to run through the worksheet only once.
+The new code uses the 3 output arrays that we created earlier, which allows the code to run through the worksheet only once. Under each If function in the new code the tickerVolumes, tickerStartingPrices, tickerEndingPrices each referenced their own output arrays to store the data.
 
 ### Run Time Differences
 The original code has a runtime for the years 2017 and 2018 of:
