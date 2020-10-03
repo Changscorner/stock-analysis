@@ -84,8 +84,6 @@ While the new code looks like this:
             End If
 
         Next i
-        
-    Next t
 ```
 
 The new code 
