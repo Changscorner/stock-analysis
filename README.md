@@ -19,7 +19,7 @@ The Advantages and Disadvantages of Refactoring Code.
 ### Code differences
 The original code was written to ask the user to input a year for which they would like to have analyzed using this code:
 ```		
-	yearValue = InputBox("What year would you like to run the analysis on?")		
+    yearValue = InputBox("What year would you like to run the analysis on?")		
 ```
 Taking that input it would then run through the selected years worksheet once for each ticker and output the ticker, volume and returns data.
 This is rather inefficient as the code has to runthorugh the worksheet 12 times so instead of doing it this way a better method would be to create 3 arrays that would store each output type for each ticker symbol.
@@ -33,7 +33,7 @@ This method allows each tickers data to be stored inside its own array that can 
 
 The biggest difference is the code was editing the For loop to reference the arrays instead of just going through the cells. The original code looked like this:
 ```
-	 For j = 2 To RowCount
+    For j = 2 To RowCount
        '5a) Get total volume for current ticker
             If Cells(j, 1).Value = ticker Then
 
@@ -56,7 +56,7 @@ The biggest difference is the code was editing the For loop to reference the arr
 ```
 While the new code looks like this:
 ```
-	For i = 2 To RowCount
+    For i = 2 To RowCount
 
         '3a) Increase volume for current ticker
             If Cells(i, 1).Value = ticker Then
@@ -77,7 +77,7 @@ While the new code looks like this:
                 'store the tickerEndingPrice into the array
                 tickerEndingPrices(tickerIndex) = Cells(i, 6).Value + tickerEndingPrices(tickerIndex)
 
-            '3d Increase the tickerIndex.
+        '3d) Increase the tickerIndex.
 
                 tickerIndex = tickerIndex + 1
 
