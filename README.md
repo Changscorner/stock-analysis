@@ -1,4 +1,4 @@
-# Stock Analysis
+ # Stock Analysis
 
 ## Overview of Project
  
@@ -86,7 +86,7 @@ While the new code looks like this:
         Next i
 ```
 
-The new code 
+The new code uses the 3 output arrays that we created earlier, which allows the code to run through the worksheet only once.
 
 ### Run Time Differences
 The original code has a runtime for the years 2017 and 2018 of:
@@ -114,20 +114,26 @@ As you can see in the year 2017 all of the stocks with the exception of TERP has
 
 ### Advantages and Disadvantages to Refactoring
 #### Advantages
-1.)Refactoring code is important because it allows the code to become more efficient and managable. 
+1.)Refactoring code is important because it allows the code to become more efficient and manageable. 
 
 2.)It makes the code more readable, run faster, and allows for an incremental approach to coding.
 
+3.)Increases productivity
+
 #### Disadvantages
-1.) There is a risk if the application's code that you are is too large or when the existing code doesn't have proper test cases.
+1.) If the application's code that you are editing is too complicated it can lead to there not being proper test cases.
 
 2.) There is a big time investment that is needed and could make the code more complex.
 
 3.) If during the refactor additional requirements are added in it can lead to additional time to be spent on testing.
-There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
 
 ### VBA Script Refactoring
 
 #### Advantages
+The advantage for refactoring the VBA code is that it made it much more efficient with a lower execution time. The previous code ran through the worksheet 12 time for 12 outputs. While the new code ran through the worksheet only once and separated the outputting to its own for loop. 
 
 #### Disadvantages
+The code became considerably more complex with the involvement of the 3 output arrays which led to some errors on the output initially. The output code had to be edited to show only the endingPrices and startingPrices only to see where the error was occurring from. Additionally it was easier to spot mistakes in the code originally as the outputs were displayed immediately rather than being stored inside an array. To debug an error in the array I would've had to 
+
+
+
